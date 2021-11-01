@@ -10,19 +10,19 @@ However, we really recommend u to search yourself in the browser and keep learni
 
 ## Js characteristics
 
-* **high-level programming lenguage** \*
-* **just-in-time (JIT) compiled** \*
-* multi-paradigm
-* single-threaded
-* dynamic typing
-* prototype-based object orientation
-* first class functions
+- **high-level programming lenguage** \*
+- **just-in-time (JIT) compiled** \*
+- multi-paradigm
+- single-threaded
+- dynamic typing
+- prototype-based object orientation
+- first class functions
 
 All those topics are covered in different branches. So, feel free to `git checkout "name_of_the_branch"` and lern more and deeper about those topics.
 
 \* topics which are covered on branches
 
-### What does high-level mean?*
+### What does high-level mean?\*
 
 Before covering high-level and low-level programming languages meanings, let's clarify some concepts.
 
@@ -44,7 +44,7 @@ Low-level languages can convert to machine code without a compiler or interprete
 
 Second-generation programming languages use a simpler processor called an assembler – and the resulting code runs directly on the processor.
 
-A program written in a low-level language can be made to run very quickly, with a small memory footprint. 
+A program written in a low-level language can be made to run very quickly, with a small memory footprint.
 
 ##### How can a developer code in Machine Code.
 
@@ -52,12 +52,9 @@ Currently, programmers almost never write programs directly in machine code, bec
 
 A programmer coding in "machine code" normally codes instructions and data in a more readable form such as decimal, octal, or hexadecimal which is translated to internal format by a program called a loader or toggled into the computer's memory from a front panel.
 
-*Example: A function in hexadecimal representation of 32-bit x86 machine code to calculate the nth Fibonacci number*
+_Example: A function in hexadecimal representation of 32-bit x86 machine code to calculate the nth Fibonacci number_
 
-`8B542408 83FA0077 06B80000 0000C383
-FA027706 B8010000 00C353BB 01000000
-B9010000 008D0419 83FA0376 078BD989
-C14AEBF1 5BC3`
+`8B542408 83FA0077 06B80000 0000C383 FA027706 B8010000 00C353BB 01000000 B9010000 008D0419 83FA0376 078BD989 C14AEBF1 5BC3`
 
 #### High-level language
 
@@ -65,22 +62,22 @@ It refers to the higher level of abstraction from machine language.
 
 Rather than dealing with:
 
-* registers
-* memory addresses
-* call stacks
+- registers
+- memory addresses
+- call stacks
 
-high-level languages deal with: 
+high-level languages deal with:
 
-* variables
-* arrays
-* objects
-* complex arithmetic
-* boolean expressions
-* subroutines
-* functions
-* loops
-* threads
-* locks
+- variables
+- arrays
+- objects
+- complex arithmetic
+- boolean expressions
+- subroutines
+- functions
+- loops
+- threads
+- locks
 
 and other abstract computer science concepts, with a focus on **usability** over optimal program efficiency.
 
@@ -94,9 +91,9 @@ However high-level language can not be executed by the computer.
 
 There are three general modes of execution for modern high-level languages:
 
-* Interpreted
-* Compiled
-* Source to source translated or transcompiled
+- Interpreted
+- Compiled
+- Source to source translated or transcompiled
 
 However, note that languages are not strictly interpreted languages or compiled languages.
 
@@ -112,13 +109,13 @@ The code syntax is transformed into an executable form before running.
 
 There are two types of compilation:
 
-* Machine code generation
+- Machine code generation
 
 Some compilers compile source code directly into machine code.
 
 This is the original mode of compilation, and languages that are directly and completely transformed to machine-native code in this way may be called truly compiled languages. See assembly language.
 
-* Intermediate representations
+- Intermediate representations
 
 When code written in a language is compiled to an intermediate representation, that representation can be optimized or saved for later execution without the need to re-read the source file.
 
@@ -130,7 +127,67 @@ Code written in a high-level language is translated into terms of a lower-level 
 
 **Docu**
 
-* [wiki high-level](https://en.wikipedia.org/wiki/High-level_programming_language)
-* [wiki low-level](https://en.wikipedia.org/wiki/Low-level_programming_language)
-* [machine-code low-level high-level](https://www.educba.com/assembly-language-vs-machine-language/)
+- [wiki high-level](https://en.wikipedia.org/wiki/High-level_programming_language)
+- [wiki low-level](https://en.wikipedia.org/wiki/Low-level_programming_language)
+- [machine-code low-level high-level](https://www.educba.com/assembly-language-vs-machine-language/)
 
+### Is javascript an interpreted, compiled or a source-to-source translated or transcompiled lenguage?
+
+Javascript is a just-in-time ([JIT](https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/)) compiled programming lenguage.
+
+JIT compiled programming language? Wha'choo talkin' 'bout?.
+
+Let's start from the beginning.
+
+The computer needs a JS-engine to understand JS scripts, because as it was already explained, the computer only execute machine code, and js is a high-level programming lenguage.
+
+For that task, the JS-engine needs an interpreter.
+
+#### Interpreter role
+
+It basically translates pretty much line-by-line, on the fly.
+
+Interpreters are quite quick to get up and run, because it is not neccesary to go through the whole compilation before the code can start to be run.
+
+But there is a con.
+
+Our interpreter is amnesiac.
+
+An interpreter translates line by line, which means that even if there is the same code in a script, the interpreter will take the time to translate it again an again, over and over.
+
+The interpreter doesn't have time to optimized the executable code.
+
+#### Compiler role
+
+The compiler works ahead of time to create that translation and write it down.
+
+It takes more time to start up, because it goes through the whole code before execution. But it runs faster when there is repeated code.
+
+A compiler has the ability to optimized the code before run it.
+
+#### Monitor role
+
+Js-engine has another character how care about translation. The monitor.
+
+That monitor watches the code as it runs, and makes a note of how many times it is run and what types are used.
+
+1. the monitor runs everything through the interpreter, and each segment of code is ranked by the frequency it is run (+ warm, ++ hot).
+
+2. if the segment code gets warm
+
+   1. it is sent off to be compiled.
+   2. the compiler compiles that code to a indexed baseline stub (by number and variable type) where it is stored as Inline Caching.
+      1. If a piece of code is monomorphic\*, it will get one stub.
+      2. If it is polymorphic\*, then it will get a stub for each combination of types that has come through that operation.
+   3. when the monitor sees that execution is hitting the same code again with the same variable types, it will just pull out its compiled indexed version.
+
+3. if the segment code gets hot.
+   1. it is sent off to the optimizing compiler.
+   2. The optimizing compiler uses the information the monitor gatheres by watching code execution to make some type assumptions.
+   3. the compiler creates another, even faster, version of the code based in those assumptions, that is also stored.
+   4. because of dynamic type system in js, the compiled code needs to be checked before it runs. Those assumptions can be false.
+      1. **optimization** if the assumption is true
+      2. **deoptimization**:if it is not, the optimized code is trashed and execution goes back to the interpreter or compiled version.
+
+monomorphic (that is, always called with the same types)
+polymorphic (called with different types from one pass through the code to another)
