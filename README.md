@@ -1,12 +1,13 @@
 # JavaScript
 
-**This is just a guide**
-
 The basis of javascript is covered here. A deep comprehension of how javascript works and what happens under the hood.
 
 However, we really recommend u to search yourself in the browser and keep learning more and deeper about Js.
 
-**Feel free to improve this wiki, pull requests are welcome 😀.**
+```diff
++ This is just a guide.
++ Feel free to improve this wiki, pull requests are welcome 😀.
+```
 
 ## Js characteristics
 
@@ -20,7 +21,9 @@ However, we really recommend u to search yourself in the browser and keep learni
 
 All those topics are covered in different branches. So, feel free to `git checkout "name_of_the_branch"` and lern more and deeper about those topics.
 
-\* topics which are covered on branches
+```diff
+! * topics which are covered on branches
+```
 
 ### What does high-level mean?\*
 
@@ -40,7 +43,7 @@ Each instruction causes the CPU to perform a very specific task, such as a load,
 
 ##### What is a low-level language?
 
-Low-level languages can convert to machine code without a compiler or interpreter
+Low-level languages can be converted to machine code without a compiler or interpreter
 
 Second-generation programming languages use a simpler processor called an assembler – and the resulting code runs directly on the processor.
 
@@ -52,9 +55,14 @@ Currently, programmers almost never write programs directly in machine code, bec
 
 A programmer coding in "machine code" normally codes instructions and data in a more readable form such as decimal, octal, or hexadecimal which is translated to internal format by a program called a loader or toggled into the computer's memory from a front panel.
 
-_Example: A function in hexadecimal representation of 32-bit x86 machine code to calculate the nth Fibonacci number_
+```diff
+# Example: A function in hexadecimal representation of 32-bit x86 machine code to calculate the nth Fibonacci number
+```
 
-`8B542408 83FA0077 06B80000 0000C383 FA027706 B8010000 00C353BB 01000000 B9010000 008D0419 83FA0376 078BD989 C14AEBF1 5BC3`
+8B542408 83FA0077 06B80000 0000C383
+FA027706 B8010000 00C353BB 01000000
+B9010000 008D0419 83FA0376 078BD989
+C14AEBF1 5BC3
 
 #### High-level language
 
@@ -189,8 +197,9 @@ That monitor watches the code as it runs, and makes a note of how many times it 
       1. **optimization** if the assumption is true
       2. **deoptimization**:if it is not, the optimized code is trashed and execution goes back to the interpreter or compiled version.
 
-\* monomorphic (that is, always called with the same types)
-\
-\* polymorphic (called with different types from one pass through the code to another)
-\
+```diff
+! * monomorphic (that is, always called with the same types)
+! * polymorphic (called with different types from one pass through the code to another)
+```
+
 [monomorphism and polymorphism](https://mrale.ph/blog/2015/01/11/whats-up-with-monomorphism.html)
