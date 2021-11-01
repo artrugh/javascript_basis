@@ -4,13 +4,13 @@
 
 *The basis of javascript is covered here. A deep comprehension of how javascript works and what happens under the hood. However, we really recommend u to search yourself in the browser and keep learning more and deeper about Js.*
 
-**Fell free to improve this wiki, pull requests are welcome 😀.**
+**Feel free to improve this wiki, pull requests are welcome 😀.**
 
 ## What is Js?
 
-[wiki](https://en.wikipedia.org/wiki/JavaScript)
-[mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[javascript.info](https://javascript.info/intro)
+* [wiki](https://en.wikipedia.org/wiki/JavaScript)
+* [mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [javascript.info](https://javascript.info/intro)
 
 It is a programming language.
 
@@ -35,4 +35,6 @@ Let's start though!
 * dynamic typing
 * prototype-based object orientation
 * first class functions
+
+All those topics are covered in different branches. So, feel free to `git checkout "name_of_the_branch"` and lern more and deeper about those topics. 
 
