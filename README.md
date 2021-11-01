@@ -8,26 +8,6 @@ However, we really recommend u to search yourself in the browser and keep learni
 
 **Feel free to improve this wiki, pull requests are welcome 😀.**
 
-## What is Js?
-
-* [wiki](https://en.wikipedia.org/wiki/JavaScript)
-* [mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-* [javascript.info](https://javascript.info/intro)
-
-It is a programming language.
-
-The standards for it are [the ECMAScript Language Specification](https://tc39.es/ecma262/) and [the ECMAScript Internationalization API specification](https://tc39.es/ecma402/).
-
-## Why javascript is so famous?
-
-Because it is best known as the language embedded in web browsers but furthermore, it has also been widely adopted for server and embedded applications.
-
-In other words, JavaScript is the dominant client-side scripting language of the Web.
-
-However, we propose to u first learn some basic concepts of Js before diving into the browser and their js engines.
-
-Let's start though!
-
 ## Js characteristics
 
 * **high-level programming lenguage** \*
@@ -148,9 +128,9 @@ When the intermediate representation is saved, it may be in a form such as bytec
 
 Code written in a high-level language is translated into terms of a lower-level language for which native code compilers are already common.
 
-
 **Docu**
 
 * [wiki high-level](https://en.wikipedia.org/wiki/High-level_programming_language)
 * [wiki low-level](https://en.wikipedia.org/wiki/Low-level_programming_language)
 * [machine-code low-level high-level](https://www.educba.com/assembly-language-vs-machine-language/)
+
