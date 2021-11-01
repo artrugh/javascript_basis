@@ -89,7 +89,7 @@ Rather than dealing with:
 * memory addresses
 * call stacks
 
-,high-level languages deal with: 
+high-level languages deal with: 
 
 * variables
 * arrays
@@ -108,7 +108,7 @@ One thing to note about high-level programming languages is that these languages
 
 A high-level language is easy for programmers to write as well as to understand.
 
-However high-level language can 
+However high-level language can not be executed by the computer.
 
 ##### How can the computer execute a high-level lenguage?
 
