@@ -2,7 +2,9 @@
 
 **This is just a guide**
 
-*The basis of javascript is covered here. A deep comprehension of how javascript works and what happens under the hood. However, we really recommend u to search yourself in the browser and keep learning more and deeper about Js.*
+The basis of javascript is covered here. A deep comprehension of how javascript works and what happens under the hood.
+
+However, we really recommend u to search yourself in the browser and keep learning more and deeper about Js.
 
 **Feel free to improve this wiki, pull requests are welcome 😀.**
 
