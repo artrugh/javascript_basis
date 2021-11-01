@@ -10,9 +10,9 @@ However, we really recommend u to search yourself in the browser and keep learni
 
 ## What is Js?
 
-* [wiki](https://en.wikipedia.org/wiki/JavaScript)
-* [mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-* [javascript.info](https://javascript.info/intro)
+- [wiki](https://en.wikipedia.org/wiki/JavaScript)
+- [mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [javascript.info](https://javascript.info/intro)
 
 It is a programming language.
 
@@ -30,13 +30,14 @@ Let's start though!
 
 ## Js characteristics
 
-* high-level programming lenguage
-* just-in-time (JIT) compiled
-* multi-paradigm
-* single-threaded
-* dynamic typing
-* prototype-based object orientation
-* first class functions
+- high-level programming lenguage \*
+- just-in-time (JIT) compiled \*
+- multi-paradigm
+- single-threaded
+- dynamic typing
+- prototype-based object orientation
+- first class functions
 
-All those topics are covered in different branches. So, feel free to `git checkout "name_of_the_branch"` and lern more and deeper about those topics. 
+All those topics are covered in different branches. So, feel free to `git checkout "name_of_the_branch"` and lern more and deeper about those topics.
 
+\* topics which are covered on branches
