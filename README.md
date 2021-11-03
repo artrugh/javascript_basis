@@ -149,9 +149,27 @@ Let's start from the beginning.
 
 The computer needs a JS-engine to understand JS scripts, because as it was already explained, the computer only execute machine code, and js is a high-level programming lenguage.
 
-For that task, the JS-engine needs an interpreter.
+So basically, the js-engine is a program that helps in converting your code of JavaScript into a lower level code or machine code.
 
-#### Interpreter role
+#### What happens though inside the JS-engine?
+
+The js-engine takes the code as an import and export machine code which can be understood by the CPU.
+
+This process has three phases:
+
+* Parsing
+* Compiling
+* Execution
+
+##### Parsing
+
+Before the code is passed to the interpreter, it has to first get parsed into Abstract Syntax Tree [(AST)](https://en.wikipedia.org/wiki/Abstract_syntax_tree), which is a tree-like structure of the code.
+
+**[Try it here by yourself](astexplorer.net)**
+
+##### Compiling
+
+###### Interpreter role
 
 It basically translates pretty much line-by-line, on the fly.
 
@@ -165,7 +183,7 @@ An interpreter translates line by line, which means that even if there is the sa
 
 The interpreter doesn't have time to optimized the executable code.
 
-#### Compiler role
+###### Compiler role
 
 The compiler works ahead of time to create that translation and write it down.
 
@@ -173,9 +191,9 @@ It takes more time to start up, because it goes through the whole code before ex
 
 A compiler has the ability to optimized the code before run it.
 
-#### Monitor role
+###### Monitor role
 
-Js-engine has another character how care about translation. The monitor.
+Js-engine has another character who cares about translation. The monitor.
 
 That monitor watches the code as it runs, and makes a note of how many times it is run and what types are used.
 
@@ -196,6 +214,8 @@ That monitor watches the code as it runs, and makes a note of how many times it 
    4. because of dynamic type system in js, the compiled code needs to be checked before it runs. Those assumptions can be false.
       1. **optimization** if the assumption is true
       2. **deoptimization**:if it is not, the optimized code is trashed and execution goes back to the interpreter or compiled version.
+      
+4. The Garbage Collector is who cares about trashing and freeing space. 
 
 ```diff
 ! * monomorphic (that is, always called with the same types)
@@ -204,3 +224,5 @@ That monitor watches the code as it runs, and makes a note of how many times it 
 
 _Bonus Track_<br />
 [monomorphism and polymorphism](https://mrale.ph/blog/2015/01/11/whats-up-with-monomorphism.html)
+[V8-github](https://github.com/v8/v8/blob/c736a452575f406c9a05a8c202b0708cb60d43e5/src/objects.h#L9368)
+[V8-js-engine tutorial](https://www.digitalocean.com/community/tutorials/js-v8-engine)
