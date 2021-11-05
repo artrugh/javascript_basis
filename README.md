@@ -17,8 +17,8 @@ However, we really recommend u to search yourself in the browser and keep learni
 
 - high-level programming lenguage \*
 - just-in-time (JIT) compiled \*
-- multi-paradigm
 - single-threaded
+- multi-paradigm
 - dynamic typing
 - prototype-based object orientation
 - first class functions
