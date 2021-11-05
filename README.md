@@ -16,7 +16,7 @@ However, we really recommend u to search yourself in the browser and keep learni
 ## Js characteristics
 
 - high-level programming lenguage \*
-- just-in-time (JIT) compiled \*
+- interpreted or just-in-time (JIT) compiled \*
 - single-threaded
 - multi-paradigm
 - dynamic typing
