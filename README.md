@@ -229,6 +229,6 @@ That monitor watches the code as it runs, and makes a note of how many times it 
 ```
 
 _Bonus Track_<br />
-[read about monomorphism and polymorphism](https://mrale.ph/blog/2015/01/11/whats-up-with-monomorphism.html)
-[if u are a C# developer, maybe you can be interested in check V8-github](https://github.com/v8/v8/blob/c736a452575f406c9a05a8c202b0708cb60d43e5/src/objects.h#L9368)
+[read about monomorphism and polymorphism](https://mrale.ph/blog/2015/01/11/whats-up-with-monomorphism.html)<br />
+[if u are a C# developer, maybe you can be interested in check V8-github](https://github.com/v8/v8/blob/c736a452575f406c9a05a8c202b0708cb60d43e5/src/objects.h#L9368)<br />
 [V8-js-engine tutorial](https://www.digitalocean.com/community/tutorials/js-v8-engine)
