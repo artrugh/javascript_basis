@@ -191,9 +191,10 @@ It takes more time to start up, because it goes through the whole code before ex
 
 A compiler has the ability to optimized the code before run it.
 
-_Some js-engines implements a just-in-time compiler stead of an interpreter. For instance, V8 -Chrome js-engine- implements full-codegen. A simple and very fast compiler that produced simple and relatively slow machine code, which removed the need for an interpreter._
+_Some js-engines implements a just-in-time compiler stead of an interpreter. For instance, V8 -Chrome js-engine-, before 2017, implements full-codegen. A simple and very fast compiler that produced simple and relatively slow machine code, which removed the need for an interpreter.
+In 2017 Google launched an improved V8 version, in which a Ignition Interpreter is implemented _
 
-If your want to learn more and deeper about how V8 works, visit [this link](https://blog.sessionstack.com/how-javascript-works-inside-the-v8-engine-5-tips-on-how-to-write-optimized-code-ac089e62b12e)
+If your want to learn more and deeper about how V8 works, visit [this link](https://blog.sessionstack.com/how-javascript-works-inside-the-v8-engine-5-tips-on-how-to-write-optimized-code-ac089e62b12e) and [this one as well](https://medium.com/jspoint/how-javascript-works-in-browser-and-node-ab7d0d09ac2f).
 
 ###### Monitor role
 
