@@ -12,9 +12,9 @@ However, we really recommend u to search yourself in the browser and keep learni
 ## Js characteristics
 
 - **high-level programming lenguage** \*
-- **just-in-time (JIT) compiled** \*
-- multi-paradigm
+- **interpreted or just-in-time (JIT) compiled** \*
 - single-threaded
+- multi-paradigm
 - dynamic typing
 - prototype-based object orientation
 - first class functions
@@ -137,11 +137,11 @@ Code written in a high-level language is translated into terms of a lower-level 
 
 - [wiki high-level](https://en.wikipedia.org/wiki/High-level_programming_language)
 - [wiki low-level](https://en.wikipedia.org/wiki/Low-level_programming_language)
-- [machine-code low-level high-level](https://www.educba.com/assembly-language-vs-machine-language/)
+- [differences between machine-code/low-level/high-level](https://www.educba.com/assembly-language-vs-machine-language/)
 
 ### Is javascript an interpreted, compiled or a source-to-source translated or transcompiled lenguage?
 
-Javascript is a just-in-time ([JIT](https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/)) compiled programming lenguage.
+Javascript is a interpreted or just-in-time ([JIT](https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/)) compiled programming lenguage.
 
 JIT compiled programming language? Wha'choo talkin' 'bout?.
 
@@ -157,9 +157,9 @@ The js-engine takes the code as an import and export machine code which can be u
 
 This process has three phases:
 
-* Parsing
-* Compiling
-* Execution
+- Parsing
+- Compiling
+- Execution
 
 ##### Parsing
 
@@ -191,9 +191,13 @@ It takes more time to start up, because it goes through the whole code before ex
 
 A compiler has the ability to optimized the code before run it.
 
+_Some js-engines implements a just-in-time compiler stead of an interpreter. For instance, V8 -Chrome js-engine- implements full-codegen. A simple and very fast compiler that produced simple and relatively slow machine code, which removed the need for an interpreter._
+
+If your want to learn more and deeper about how V8 works, visit [this link](https://blog.sessionstack.com/how-javascript-works-inside-the-v8-engine-5-tips-on-how-to-write-optimized-code-ac089e62b12e)
+
 ###### Monitor role
 
-Js-engine has another character who cares about translation. The monitor.
+Js-engine has another character who cares about translation. **The monitor.**
 
 That monitor watches the code as it runs, and makes a note of how many times it is run and what types are used.
 
@@ -208,14 +212,15 @@ That monitor watches the code as it runs, and makes a note of how many times it 
    3. when the monitor sees that execution is hitting the same code again with the same variable types, it will just pull out its compiled indexed version.
 
 3. if the segment code gets hot.
+
    1. it is sent off to the optimizing compiler.
    2. The optimizing compiler uses the information the monitor gatheres by watching code execution to make some type assumptions.
    3. the compiler creates another, even faster, version of the code based in those assumptions, that is also stored.
    4. because of dynamic type system in js, the compiled code needs to be checked before it runs. Those assumptions can be false.
       1. **optimization** if the assumption is true
       2. **deoptimization**:if it is not, the optimized code is trashed and execution goes back to the interpreter or compiled version.
-      
-4. The Garbage Collector is who cares about trashing and freeing space. 
+
+4. The Garbage Collector is who cares about trashing and freeing space.
 
 ```diff
 ! * monomorphic (that is, always called with the same types)
@@ -223,6 +228,6 @@ That monitor watches the code as it runs, and makes a note of how many times it 
 ```
 
 _Bonus Track_<br />
-[monomorphism and polymorphism](https://mrale.ph/blog/2015/01/11/whats-up-with-monomorphism.html)
-[V8-github](https://github.com/v8/v8/blob/c736a452575f406c9a05a8c202b0708cb60d43e5/src/objects.h#L9368)
+[read about monomorphism and polymorphism](https://mrale.ph/blog/2015/01/11/whats-up-with-monomorphism.html)
+[if u are a C# developer, maybe you can be interested in check V8-github](https://github.com/v8/v8/blob/c736a452575f406c9a05a8c202b0708cb60d43e5/src/objects.h#L9368)
 [V8-js-engine tutorial](https://www.digitalocean.com/community/tutorials/js-v8-engine)
