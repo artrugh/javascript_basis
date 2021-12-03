@@ -1,6 +1,6 @@
 ## Lexical environments or scopes
 
-(Lexical environments in ECMAScript)[https://262.ecma-international.org/6.0/#sec-lexical-environments]
+[Lexical environments in ECMAScript](https://262.ecma-international.org/6.0/#sec-lexical-environments)
 
 **Lexical environments or scopes** are environment records, or state components, in which the variables are stored, creating variable indetifier. Everytime an execution context is created, a new lexical environment is created as well.
 

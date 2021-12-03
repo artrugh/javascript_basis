@@ -101,7 +101,7 @@ The memory life cycle consists on three phases:
 
    The **heap**, which is also called "free store", is a large and single region in memory, which can be used to store arbitrary data in an unordered fashion.
 
-   More about the heap in (mdn)[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management]
+   More about the heap in [mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management)
 
    So, basically the heaps and the stack are two data structures that the engine uses for different purposes.
 
@@ -148,9 +148,8 @@ The memory life cycle consists on three phases:
    objNames ------------------- A006 -- B002 -------- B002 -- { name: A003 }
    newObj --------------------- A007 -- B003 -------- B003 -- { name: Paul }
 
-   (More Info)[https://felixgerschau.com/javascript-memory-management/]
+   [More Info](https://felixgerschau.com/javascript-memory-management/)
 
 3. **Release** the allocated memory when it is not needed anymore.
 
    While the stack is automatically cleaned after the invoked function was already used, the heap memory is leaned up by the **garbage collector** when the data is not used anymore.
-
