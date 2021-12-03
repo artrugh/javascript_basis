@@ -39,7 +39,7 @@ Thanks to modern browsers, as not all open browser tabs rely on single JavaScrip
 
 Any tab having page opened from the same domain / same website, shares the same thread. Browsers implement one-process-per-site policy and a process uses the same javascript execution thread.
 
-[Click here] to learn more about how browsers manage the thread(http://hassansin.github.io/shared-event-loop-among-same-origin-windows)
+[Click here to learn more about how browsers manage the thread](http://hassansin.github.io/shared-event-loop-among-same-origin-windows)
 
 #### Code Execution in javascript
 
