@@ -112,9 +112,9 @@ Code written in a high-level language is translated into terms of a lower-level 
 - [wiki low-level](https://en.wikipedia.org/wiki/Low-level_programming_language)
 - [differences between machine-code/low-level/high-level](https://www.educba.com/assembly-language-vs-machine-language/)
 
-### Is javascript an interpreted, compiled or a source-to-source translated or transcompiled lenguage?
+### Is JavaScript an interpreted, compiled or a source-to-source translated or transcompiled lenguage?
 
-Javascript is a interpreted or just-in-time ([JIT](https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/)) compiled programming lenguage.
+JavaScript is a interpreted or just-in-time ([JIT](https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/)) compiled programming lenguage.
 
 JIT compiled programming language? Wha'choo talkin' 'bout?.
 
@@ -167,7 +167,7 @@ A compiler has the ability to optimized the code before run it.
 _Some js-engines implements a just-in-time compiler stead of an interpreter. For instance, V8 -Chrome js-engine-, before 2017, implements full-codegen. A simple and very fast compiler that produced simple and relatively slow machine code, which removed the need for an interpreter.
 In 2017 Google launched an improved V8 version, in which a Ignition Interpreter is implemented _
 
-If your want to learn more and deeper about how V8 works, visit [this link](https://blog.sessionstack.com/how-javascript-works-inside-the-v8-engine-5-tips-on-how-to-write-optimized-code-ac089e62b12e) and [this one as well](https://medium.com/jspoint/how-javascript-works-in-browser-and-node-ab7d0d09ac2f).
+If your want to learn more and deeper about how V8 works, visit [this link](https://blog.sessionstack.com/how-JavaScript-works-inside-the-v8-engine-5-tips-on-how-to-write-optimized-code-ac089e62b12e) and [this one, as well](https://medium.com/jspoint/how-JavaScript-works-in-browser-and-node-ab7d0d09ac2f).
 
 ###### Monitor role
 
