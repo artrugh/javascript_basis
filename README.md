@@ -18,6 +18,10 @@ However, we really recommend u to search yourself in the browser and keep learni
 - high-level programming lenguage \*
 - interpreted or just-in-time (JIT) compiled \*
 - single-threaded \*
+  - execution contexts
+  - call stack
+  - lexical environment
+  - memory life cycle
 - multi-paradigm
 - dynamic typing
 - prototype-based object orientation
