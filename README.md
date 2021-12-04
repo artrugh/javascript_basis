@@ -1,6 +1,6 @@
 # JavaScript
 
-The basis of javascript is covered here. A deep comprehension of how javascript works and what happens under the hood.
+The basis of JavaScript is covered here. A deep comprehension of how JavaScript works and what happens under the hood.
 
 However, we really recommend u to search yourself in the browser and keep learning more and deeper about Js.
 
@@ -25,7 +25,7 @@ However, we really recommend u to search yourself in the browser and keep learni
 
 Bonus Track
 
-- Typescript \*
+- TypeScript \*
 
 All those topics are covered in different branches. So, feel free to `git checkout "name_of_the_branch"` and lern more and deeper about those topics.
 
