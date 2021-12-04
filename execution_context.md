@@ -1,13 +1,13 @@
 ## Execution context
 
-Whenever a javascript code is run, a **execution context** is created.
+Whenever a JavaScript code is run, a **execution context** is created.
 
 _An **execution context** is a specification device that is used to track the runtime evaluation of code by an ECMAScript implementation.
 At any point in time, there is at most one execution context that is actually executing code. This is known as the running execution context._
 
-An **execution context** is an environment where the javascript code is evaluated and executed.
+An **execution context** is an environment where the JavaScript code is evaluated and executed.
 
-There are two types of execution context in javascript.
+There are two types of execution context in JavaScript.
 
 1. **Global Execution Context**
 

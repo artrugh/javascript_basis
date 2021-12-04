@@ -10,7 +10,7 @@ Basically, the call stack tracks:
 
 ### How does the call stack store and manage function invocation or function call?
 
-When the code is loaded, the javascript engine first creates a **global execution context**.
+When the code is loaded, the JavaScript engine first creates a **global execution context**.
 
 Then, during execution, when a function is invoked, a **new execution context** is created and pushed to the **top** of the **call stack**, creating a new **stack frame**.
 

@@ -175,7 +175,7 @@ The four lexical environments are:
 
         3. Module lexical environment or Module scope - visible within a module
 
-There are three pertinent factors in deciding the scope of an identifier in javascript:
+There are three pertinent factors in deciding the scope of an identifier in JavaScript:
 
 - How a indetifier was declared
 - Where a indetifier was declared

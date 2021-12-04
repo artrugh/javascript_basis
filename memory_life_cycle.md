@@ -62,7 +62,7 @@ The memory life cycle consists on three phases:
 
    What is static data?
 
-   Data which is **inmmutable**. In javascript primitive data type or primitive values, are inmmutable, they cannot be altered.
+   Data which is **inmmutable**. In JavaScript primitive data type or primitive values, are inmmutable, they cannot be altered.
 
    \*It is important not to confuse a primitive itself, with a variable assigned a primitive value. The variable may be reassigned a new value, but the existing value can not be changed in the ways that objects, arrays, and functions can be altered.
 
@@ -91,7 +91,7 @@ The memory life cycle consists on three phases:
 
    What happens with those variable which values are **dynamic data**?
 
-   As you can already guees, **non primitive data type** are considered dinamic data, because they are mutable in javascript. Non primative are basically **objects and functions**.
+   As you can already guees, **non primitive data type** are considered dinamic data, because they are mutable in JavaScript. Non primative are basically **objects and functions**.
 
    Functions are regular objects with the additional capability of being callable.
 
