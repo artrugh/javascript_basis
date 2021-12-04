@@ -6,7 +6,7 @@ However, we really recommend u to search yourself in the browser and keep learni
 
 - [wiki](https://en.wikipedia.org/wiki/JavaScript)
 - [mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [javascript.info](https://javascript.info/intro)
+- [JavaScript.info](https://JavaScript.info/intro)
 
 ```diff
 + This is just a guide.
