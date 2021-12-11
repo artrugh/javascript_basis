@@ -29,7 +29,7 @@ However, we really recommend u to search yourself in the browser and keep learni
 
 Bonus Track
 
-- Typescript \*
+- TypeScript \*
 
 All those topics are covered in different branches. So, feel free to `git checkout "name_of_the_branch"` and lern more and deeper about those topics.
 
